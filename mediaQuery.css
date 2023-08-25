@@ -1,0 +1,104 @@
+@media (max-width:990px) {
+    .right-nav{
+        display: none;
+    }
+   
+    .possibilities{ 
+        flex-wrap: wrap;
+        gap:1.5%;
+        margin: auto;
+    }
+    .possibilities>.possibility-card{
+        width: 48%;
+    }
+    .footerfour{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media (max-width:770px) {
+   .header{
+    flex-direction: column-reverse;
+   }
+   .left-header{
+    width: 100%;
+   }
+   .left-header>h1{
+    text-align: center;
+   }
+   .cards{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2%;
+   }
+   .cards>.card{
+    width: 45%;
+   }
+   .example-card{
+    flex-direction: column;
+   }
+   #row{
+    flex-direction: column;
+   }
+   .about-example{
+    width: 100%;
+   }
+   .example-card>img{
+    width: 100%;
+   } 
+   .problem{
+    flex-direction: column-reverse;
+    
+   }
+   .problem-right{
+    width: 55%;
+   }
+   .problem-right img{
+        width: 100%;
+        display: block;
+        margin: auto;
+   }
+   .panel h4{
+    width: 80%;
+    margin-right: auto;
+   }
+   .problem>.problem-left{
+    width: 98%;
+    margin: auto;
+   }
+   .free div>p{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+}
+@media (max-width:480px) {
+    .cards{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+       }
+       .cards>.card{
+        width: 98%;
+        margin: auto;
+       }
+       .possibilities{ 
+        flex-wrap: wrap;
+        flex-direction: column;
+       }
+       .possibilities>.possibility-card{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .panel{
+        flex-direction: column;
+        align-items: start;
+    }
+    .free div>p{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+       }
+   
+}

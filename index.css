@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:20px
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.container{
+    max-width: 100%;
+    margin-inline: auto;
+    padding: var(--padding-inline-section);
+    overflow-x: hidden;
+}
+ul
+{
+    list-style-type: none;
+}
+.over{
+    color: black;
+}
+.over:hover{
+    color: var(--accent-color);
+}
+.primary-btn{
+    color: white !important;
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: ease-in;
+}
+.primary-btn:hover{
+    background-color: var(--accent-color-dark);
+}
+.secondary-btn{
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-weight: 700;
+    border: 0.5px solid var(--secondary-text-color);
+    transition: ease-in;
+}
+.secondary-btn:hover{
+    color: var(--accent-color);
+    border: 0.5px solid var(--accent-color);
+}
+
+.top-banner .small-bold-text{
+    text-align: center;
+}
+.top-banner{
+    background-color: yellow;
+}
+
+.left-nav img{
+    width: 168px;
+}
+
+.header{
+    margin: var(--padding-inline-section); 
+    justify-content: space-between;
+    /* overflow-x: hidden; */
+}
+
+.left-header p{
+    margin: 30px var(--padding-inline-section) 30px 0;
+    line-height: 1.8;
+}
+.right-header{
+    width: cacl(55%-15px);
+}
+.right-header>img{
+    width:100%;
+}
+
+.companies-logo p{
+    margin-block: 30px;
+    text-align: center;
+}
+.logo{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.logo img{
+   height: 46px;
+   
+}
+.features{
+    width: 100%;
+    text-align: center;
+    background-image: url(./imgaes/bac.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 72%;
+    margin-top: 100px;
+    padding-block: var(--padding-inline-section);
+
+}
+
+
+.features h2{
+    margin-bottom: 15px;
+    margin-block: var(--padding-inline-section);
+}
+.features>.cards{
+    width: 98%;
+    margin: auto;
+}
+.features .cards{
+    flex-wrap: wrap;
+    margin-top: 45px;
+    /* margin-right: 45px; */
+    
+}
+.card{
+    width: 30%;
+    flex-wrap: wrap;
+    margin-block: var(--padding-inline-section);
+}
+.card img{
+    width: 42px;
+}
+.card h3,.card p,.card a{
+    margin-top: 18px;
+}
+
+ .example-card img{
+    width: 50%;
+}
+.about-example{
+    width: 70%;
+} 
+.about-example>h2{
+    margin: var(--padding-inline-section) 0px;
+}
+.example-card{
+    gap: 55px;
+}
+.about-example>img{
+    width: 100px;
+    margin: var(--padding-inline-section) 0px;
+}
+.about{
+    margin: var(--padding-inline-section) 0px;
+    justify-content: start;
+}
+.about>img{
+    width: 50px;
+    
+} 
+#row{
+    flex-direction: row-reverse;
+}
+
+.possibility-card{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background-color: black;
+    background-image: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(./imgaes/5b48591a238eb6563b4d3581_cover_tasks.jpg);
+    background-size: cover;
+    transition: 0.2 ease-out;
+    flex-wrap: wrap;
+}
+.text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    font-weight: 500;
+    font-style: 21px;
+    line-height: 1.2;
+}
+.possibility-card:hover{
+    box-shadow: 0px 0px 10px #888;
+}
+
+.possibility{
+text-align: center;
+
+}
+.possibility>a{
+    margin: var(--padding-inline-section) 0px;
+}
+#bgi2{
+    background-color: black;
+    background-image: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(./imgaes/5b48581f238eb652d84d356f_cover_navigate.jpg);
+    background-size: cover;
+    transition: 0.2 ease-out;
+}
+#bgi3{
+    background-color: black;
+    background-image: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(./imgaes/5b485751238eb68a594d3555_cover_audience.jpg);
+    background-size: cover;
+    transition: 0.2 ease-out;
+}
+#bgi4{
+    background-color: black;
+    background-image: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(./imgaes/5b48587a238eb690dd4d3577_cover_about.jpg);
+    background-size: cover;
+    transition: 0.2 ease-out;
+}
+
+
+.participant{
+    background: var(--primary-text-color);
+    /* background-color: black; */
+    color: white;
+}
+.problem-left{
+    width: 60%;
+    /* z-index: 999; */
+}
+.problem-right>img{
+    width: 100%;
+    
+}
+.panel {
+    flex-wrap: wrap;
+    gap: 6%;
+}
+.problem-left .panel .flex h4{
+    width: fit-content;
+    /* width: 40%; */
+}
+.panel h4{
+    width: 45%;
+    font-weight: normal;
+}
+.problem-left>a{
+    margin-block: var(--padding-inline-section) ;
+    margin-right: var(--padding-inline-section);
+}
+.problem-left>.small-bold-text{
+    color: white;
+    margin-block: var(--padding-inline-section);
+}
+
+.problem-left .secondary-btn{
+    color: var(--accent-color-dark);
+}
+
+.free{
+    margin: var(--padding-inline-section) 0px;
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+.free div>p{
+    /* margin-block: var(--padding-inline-section) ; */
+    width: 35%;
+    align-items: end;
+    text-align: center;
+    margin: var(--padding-inline-section) auto var(--padding-inline-section);
+}
+.footerfour img{
+    width: 200px;
+}
+.footerfour .flex{
+    flex-direction: column;
+    
+}
+.column{
+    line-height: normal;
+    
+}
+.footerfour{
+    align-items: start;
+
+    
+}
+.column a{
+    color: black;
+    text-align: start;
+    align-items: start;
+}
+
+.column a:hover{
+    color: var(--accent-color-dark);
+}
+
+
+.footerr{
+    background: rgb(227, 231, 233);
+}
+
+
+
+
